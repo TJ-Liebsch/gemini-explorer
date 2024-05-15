@@ -2,7 +2,7 @@
 <h2> Overview </h2>
 Gemini Flight Manager is a comprehensive backend system built using FastAPI, designed for managing and simulating flight-related operations. This system provides a robust platform for handling various aspects of flight management, including flight generation, search, and booking functionalities.
 
-The project leverages FastAPI's efficient and easy-to-use framework to create a high-performance, scalable solution ideal for flight data management. It comes equipped with an SQLite database (flights.db) pre-populated with initial data, allowing for quick deployment and testing.
+The project leverages FastAPI's efficient and easy-to-use framework to create a high-performance, scalable solution ideal for flight data management. It comes equipped with an SQLite database (<code>flights.db</code>) pre-populated with initial data, allowing for quick deployment and testing.
 
 Key features of Gemini Flight Manager include:
 
