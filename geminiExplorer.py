@@ -8,7 +8,7 @@ import time
 # Set up VERTEXAI
 PROJECT_ID = "sample-gemini-423220"
 LOCATION = "us-central1"
-vertexai.init(project = PROJECT_ID, location=LOCATION)
+client = vertexai.init(project = PROJECT_ID, location=LOCATION)
 
 config = generative_models.GenerationConfig(
     temperature=0.4
@@ -27,10 +27,25 @@ def llm_function(chat: ChatSession, query):
     response = chat.send_message(query)
     output = response.candidates[0].content.parts[0].text
 
+    # Uncomment if you want a good format
     # Potentially switch assistant to model if assistant is too weak
-    with st.chat_message("assistant"):
-        st.markdown(output)
+    # with st.chat_message("assistant"):
+    #     # st.markdown(output)
 
+    # Uncomment if you want a typewriter effect
+    # Displays response in chat message container
+    with st.chat_message("assistant"):
+        # Speed of the typewriter
+        speed = 15
+
+        # Tpewriter program but it ruins the formating
+        tokens = response.text.split()
+        container = st.empty()
+        for index in range(len(tokens) + 1):
+            curr_full_text = " ".join(tokens[:index])
+            container.markdown(curr_full_text)
+            time.sleep(1 / speed)
+        
     st.session_state.messages.append(
         {
             "role": "user",
