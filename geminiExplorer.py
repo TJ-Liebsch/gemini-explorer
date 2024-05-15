@@ -59,6 +59,7 @@ for index, message in enumerate(st.session_state.messages):
         )
     # prevents seeing the first question
     if index != 0:
+        # prints the history
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
 
