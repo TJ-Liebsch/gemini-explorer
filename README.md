@@ -29,29 +29,29 @@ Before you begin, ensure you have the following installed on your system:
   <li><h4> Clone the Repository </h4></li>
 </ol>
 Start by cloning the repository to your local machine. Use the following command:
-'''
+```
 git clone https://github.com/your-username/your-repository.git
 cd your-repository
-'''
+```
 <h2> Set Up a Virtual Environment (Optional but recommended) </h2>
 It's a good practice to create a virtual environment for your Python projects. This keeps your project dependencies isolated. If you have virtualenv installed, create a new environment with:
 
-'''
+```
 virtualenv venv
 source venv/bin/activate
-'''
+```
 <h2> Install Dependencies </h2>
 Inside the virtual environment, install all necessary dependencies by running:
 
-'''
+```
 pip install -r requirements.txt
-'''
+```
 
 <h2> Starting the FastAPI Server </h2>
 After the installation, you can start the FastAPI server using Uvicorn. Navigate to the project directory and run:
-'''
+```
 uvicorn main:app
-'''
+```
 <h2> Accessing the API </h2>
 With the server running, you can access the API at <code>http://127.0.0.1:8000</code>.
 
