@@ -29,10 +29,12 @@ Before you begin, ensure you have the following installed on your system:
   <li><h4> Clone the Repository </h4></li>
 </ol>
 Start by cloning the repository to your local machine. Use the following command:
+
 ```
 git clone https://github.com/your-username/your-repository.git
 cd your-repository
 ```
+
 <h2> Set Up a Virtual Environment (Optional but recommended) </h2>
 It's a good practice to create a virtual environment for your Python projects. This keeps your project dependencies isolated. If you have virtualenv installed, create a new environment with:
 
