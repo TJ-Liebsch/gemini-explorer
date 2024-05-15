@@ -1,26 +1,18 @@
-# Gemini Flight Manager
+# Gemini Explorer
 
 ## Overview
 
-Gemini Flight Manager is a comprehensive backend system built using FastAPI, designed for managing and simulating flight-related operations. This system provides a robust platform for handling various aspects of flight management, including flight generation, search, and booking functionalities.
+Gemini Explorer is a AI chatbot built using vertexai, streamlit, and google cloud platform. This chatbot is capable of learning from the users and is able to answer various complex questions. The project utilizes streamlit's UI capablities to easily present the chatbox for the user to interact with.
 
-The project leverages FastAPI's efficient and easy-to-use framework to create a high-performance, scalable solution ideal for flight data management. It comes equipped with an SQLite database (`flights.db`) pre-populated with initial data, allowing for quick deployment and testing.
-
-Key features of Gemini Flight Manager include:
-- Advanced search capabilities to query flights based on criteria like origin, destination, and dates.
-- Booking system that handles seat availability across different classes and calculates costs accordingly.
-
-Designed with extensibility and scalability in mind, Gemini Flight Manager is well-suited for both educational purposes and as a foundation for more complex flight management applications.
-
-**For the purposes of Gemini Function Calling, you will only need `search_flights` and `book_flight` functions.
+Key features of Gemini Explorer include:
+- An AI that can learn from the user.
+- A UI to interact with this AI
 
 ## Installation
 
 ### Prerequisites
 Before you begin, ensure you have the following installed on your system:
 - Python 3.6 or higher
-- FastAPI
-- Uvicorn, an ASGI server for FastAPI
 
 ### Step-by-Step Installation Guide
 
