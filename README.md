@@ -8,6 +8,8 @@ Key features of Gemini Explorer include:
 - An AI that can learn from the user.
 - A UI to interact with this AI.
 
+The API key I have expires with-in 90 days of 5/13/2024, so if you couldn't run it on your own here is a short video of me running it when I still had the API key:
+
 ## Installation
 
 ### Prerequisites
@@ -38,15 +40,8 @@ Inside the virtual environment, install all necessary dependencies by running:
 pip install -r requirements.txt
 ```
 
-## Starting the FastAPI Server
-
-After the installation, you can start the FastAPI server using Uvicorn. Navigate to the project directory and run:
-
+## Accessing the Chatbot
+Inside the virtual environment, run the program with this command
 ```bash
-
+streamlit run geminiExplorer.py
 ```
-
-## Accessing the API
-With the server running, you can access the API at `http://127.0.0.1:8000.`
-
-For interactive API documentation, visit `http://127.0.0.1:8000/docs`, where you can test the API endpoints directly from your browser.
