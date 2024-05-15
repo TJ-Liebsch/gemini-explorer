@@ -6,7 +6,7 @@ Gemini Explorer is a AI chatbot built using vertexai, streamlit, and google clou
 
 Key features of Gemini Explorer include:
 - An AI that can learn from the user.
-- A UI to interact with this AI
+- A UI to interact with this AI.
 
 ## Installation
 
