@@ -29,22 +29,22 @@ def llm_function(chat: ChatSession, query):
 
     # Uncomment if you want a good format
     # Potentially switch assistant to model if assistant is too weak
-    # with st.chat_message("assistant"):
-    #     # st.markdown(output)
+    with st.chat_message("assistant"):
+        st.markdown(output)
 
     # Uncomment if you want a typewriter effect
     # Displays response in chat message container
-    with st.chat_message("assistant"):
-        # Speed of the typewriter
-        speed = 15
+    # with st.chat_message("assistant"):
+    #     # Speed of the typewriter
+    #     speed = 15
 
-        # Tpewriter program but it ruins the formating
-        tokens = response.text.split()
-        container = st.empty()
-        for index in range(len(tokens) + 1):
-            curr_full_text = " ".join(tokens[:index])
-            container.markdown(curr_full_text)
-            time.sleep(1 / speed)
+    #     # Tpewriter program but it ruins the formating
+    #     tokens = response.text.split()
+    #     container = st.empty()
+    #     for index in range(len(tokens) + 1):
+    #         curr_full_text = " ".join(tokens[:index])
+    #         container.markdown(curr_full_text)
+    #         time.sleep(1 / speed)
         
     st.session_state.messages.append(
         {
