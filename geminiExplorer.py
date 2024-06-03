@@ -4,9 +4,15 @@ from vertexai.preview import generative_models
 from vertexai.preview.generative_models import GenerativeModel, Part, Content, ChatSession
 from vertexai.preview.language_models import TextGenerationModel
 import time
+import toml
 
 # Set up VERTEXAI
-PROJECT_ID = "sample-gemini-423220"
+with open("secrets.toml", "r") as s:
+    secrets = toml.load(s)
+
+project_id = secrets["project_id"]
+
+PROJECT_ID = project_id
 LOCATION = "us-central1"
 client = vertexai.init(project = PROJECT_ID, location=LOCATION)
 
