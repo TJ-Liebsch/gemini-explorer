@@ -7,7 +7,7 @@ import time
 import toml
 
 # Set up VERTEXAI
-with open("secrets.toml", "r") as s:
+with open(".streamlit/secrets.toml", "r") as s:
     secrets = toml.load(s)
 
 project_id = secrets["project_id"]
